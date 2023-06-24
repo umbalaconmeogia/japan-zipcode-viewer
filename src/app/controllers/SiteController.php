@@ -69,7 +69,7 @@ class SiteController extends Controller
      *
      * @return Response|string
      */
-    public function actionLogin()
+    public function noactionLogin()
     {
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
@@ -91,7 +91,7 @@ class SiteController extends Controller
      *
      * @return Response
      */
-    public function actionLogout()
+    public function noactionLogout()
     {
         Yii::$app->user->logout();
 
@@ -103,7 +103,7 @@ class SiteController extends Controller
      *
      * @return Response|string
      */
-    public function actionContact()
+    public function noactionContact()
     {
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
@@ -121,7 +121,7 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionAbout()
+    public function noactionAbout()
     {
         return $this->render('about');
     }
