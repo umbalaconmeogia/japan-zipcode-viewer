@@ -22,4 +22,14 @@ It is developed base on PHP framework yii2 version 2.0.48.
    then access from http://localhost:8888/
 
 ## Operation
-Update to newest data
+
+* Update to newest data (TBD).
+* Set data version
+  ```shell
+  php yii system-setting/set-zipcode-version <versino>
+  ```
+
+## Preferences
+* [Zipcode data download top](https://www.post.japanpost.jp/zipcode/download.html)
+* [CSV download](https://www.post.japanpost.jp/zipcode/dl/kogaki-zip.html)
+* [CSV header description](https://www.post.japanpost.jp/zipcode/dl/readme.html)
