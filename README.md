@@ -26,7 +26,7 @@ It is developed base on PHP framework yii2 version 2.0.48.
 * Update to newest data (TBD).
 * Set data version
   ```shell
-  php yii system-setting/set-zipcode-version <versino>
+  php yii system-setting/set-zipcode-version <version>
   ```
 
 ## Preferences
